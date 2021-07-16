@@ -1,8 +1,0 @@
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.deps.json
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.dll
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.pdb
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csprojAssemblyReference.cache
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfoInputs.cache
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
-C:\Estudos\ArquiteturaDDD\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
