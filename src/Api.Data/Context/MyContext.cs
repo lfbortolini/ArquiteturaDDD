@@ -1,3 +1,6 @@
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using Api.Data.Mapping;
 using Api.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +14,7 @@ namespace Api.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.HasCharSet("utf8mb4").Entity<UserEntity>(new UserMap().Configure);
         }
     }
 }
