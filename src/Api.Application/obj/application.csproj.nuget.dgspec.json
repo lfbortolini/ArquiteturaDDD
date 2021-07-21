@@ -95,7 +95,17 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
+              },
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+              },
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -106,6 +116,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -284,9 +300,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj"
-              },
               "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
                 "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
               },

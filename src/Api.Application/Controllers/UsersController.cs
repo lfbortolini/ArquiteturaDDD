@@ -1,5 +1,5 @@
-using System.Net;
 using System;
+using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Interfaces.Service.User;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +10,14 @@ namespace Api.Application.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private IUserService _service;
+        public UsersController(IUserService service)
+        {
+            _service = service;
+        }
+
         [HttpGet]
-        public async Task<ActionResult> GetAll([FromServices] IUserService service)
+        public async Task<ActionResult> GetAll()
         {
             if (!ModelState.IsValid)
             {
@@ -19,7 +25,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                return Ok(await service.GettAll());
+                return Ok(await _service.GettAll());
             }
             catch (ArgumentException e)
             {
