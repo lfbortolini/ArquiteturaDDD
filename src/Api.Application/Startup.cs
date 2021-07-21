@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace application
 {
@@ -42,6 +43,47 @@ namespace application
 
             ConfigureService.ConfigureDependenciesServices(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Curso de API com .NETCore3.1/.NET5.0 - Na Prática",
+                    Description = "Arquitetura DDD - Atualizado em 16/02/2021",
+                    TermsOfService = new Uri("http://www.mfrinfo.com.br"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Marcos Fabricio Rosa",
+                        Email = "mfr@mail.com",
+                        Url = new Uri("http://www.mfrinfo.com.br")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Termo de Licença de Uso",
+                        Url = new Uri("http://www.mfrinfo.com.br")
+                    }
+                });
+
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "Entre com o Token JWT",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme {
+                            Reference = new OpenApiReference {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        }, new List<string>()
+                    }
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +93,13 @@ namespace application
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Curso de API com .NETCore3.1/.NET5.0 - Na Prática");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
