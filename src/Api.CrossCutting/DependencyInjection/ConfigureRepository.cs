@@ -12,19 +12,20 @@ namespace Api.CrossCutting.DependencyInjection
         public static void ConfigureDependenciesRepository(IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            //serviceCollection.AddScoped<IUserRepository, UserImplementation>();
 
-            if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
-            {
-                serviceCollection.AddDbContext<MyContext>(
-                    options => options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION"))
-                );
-            }
-            else
-            {
-                serviceCollection.AddDbContext<MyContext>(
-                options => options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"), ServerVersion.AutoDetect(Environment.GetEnvironmentVariable("DB_CONNECTION")))
-                );
-            }
+            // if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
+            // {
+            //     serviceCollection.AddDbContext<MyContext>(
+            //         options => options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+            //     );
+            // }
+            // else
+            // {
+            serviceCollection.AddDbContext<MyContext>(
+            options => options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"), ServerVersion.AutoDetect(Environment.GetEnvironmentVariable("DB_CONNECTION")))
+            );
+            // }
         }
     }
 }

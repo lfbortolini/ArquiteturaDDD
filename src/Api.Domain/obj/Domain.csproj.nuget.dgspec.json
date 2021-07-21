@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {}
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

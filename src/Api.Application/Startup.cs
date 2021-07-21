@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Api.CrossCutting.DependencyInjection;
 using Api.Data.Context;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,15 +30,15 @@ namespace application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (_environment.IsEnvironment("Testing"))
-            {
-                Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbAPI_Integration;Uid=root;Pwd=mudar123");
-                Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
-                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
-                Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
-                Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
-                Environment.SetEnvironmentVariable("Seconds", "28800");
-            }
+            // if (_environment.IsEnvironment("Testing"))
+            // {
+            Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbapi;Uid=root;Pwd=mudar123");
+            Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
+            Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+            Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
+            Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
+            Environment.SetEnvironmentVariable("Seconds", "28800");
+            // }
 
             services.AddControllers();
 
@@ -109,6 +110,18 @@ namespace application
             {
                 endpoints.MapControllers();
             });
+
+            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
+            {
+                using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                                                            .CreateScope())
+                {
+                    using (var context = service.ServiceProvider.GetService<MyContext>())
+                    {
+                        //context.Database.Migrate();
+                    }
+                }
+            }
         }
     }
 }
