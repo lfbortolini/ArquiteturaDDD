@@ -66,7 +66,11 @@ namespace Api.Service.Services
             }
             else
             {
-                return null;
+                return new
+                {
+                    authenticated = false,
+                    message = "Falha ao autenticar"
+                };
             }
         }
 
@@ -87,7 +91,7 @@ namespace Api.Service.Services
         {
             var securityToken = handler.CreateToken(new SecurityTokenDescriptor
             {
-                Issuer = _tokenConfigurations.Issurer,
+                Issuer = _tokenConfigurations.Issuer,
                 Audience = _tokenConfigurations.Audience,
                 SigningCredentials = _signingConfigurations.SigningCredentials,
                 Subject = identity,
