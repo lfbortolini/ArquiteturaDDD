@@ -101,6 +101,7 @@ namespace application
                     }
                 });
 
+                //Adicionar botão de autorização no swagger
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "Entre com o Token JWT",
@@ -109,6 +110,7 @@ namespace application
                     Type = SecuritySchemeType.ApiKey
                 });
 
+                //Adiciona a todos os endpoints a segurança
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement {
                     {
                         new OpenApiSecurityScheme {
