@@ -1614,6 +1614,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0",
@@ -1658,6 +1659,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },
@@ -6091,11 +6093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
+      "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
       "projectName": "application",
-      "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
+      "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
       "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\obj\\",
+      "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6113,14 +6115,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
             },
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
             }
           }
         }

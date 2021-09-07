@@ -1556,6 +1556,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },
@@ -5839,6 +5840,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Data >= 1.0.0",
       "Domain >= 1.0.0",
@@ -5852,11 +5854,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "projectName": "CrossCutting",
-      "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\obj\\",
+      "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5874,14 +5876,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
             },
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
             },
-            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
+            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
             }
           }
         }
@@ -5895,6 +5897,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[10.1.1, )"
+          },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[8.1.1, )"
