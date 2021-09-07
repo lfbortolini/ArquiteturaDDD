@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj": {}
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj": {}
   },
   "projects": {
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
         "projectName": "application",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\application.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,14 +29,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj"
               },
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
               },
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -106,14 +106,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
               },
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
               },
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -155,14 +155,14 @@
         }
       }
     },
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -180,8 +180,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -235,14 +235,14 @@
         }
       }
     },
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -295,14 +295,14 @@
         }
       }
     },
-    "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
+    "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj",
+        "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-        "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\obj\\",
+        "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -320,11 +320,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj"
               },
-              "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+              "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }

@@ -5840,11 +5840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
+      "projectUniqueName": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
+      "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\Data.csproj",
       "packagesPath": "C:\\Users\\luiz.bortolini\\.nuget\\packages\\",
-      "outputPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\obj\\",
+      "outputPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5862,8 +5862,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "c:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
+            "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Estudos\\ArquiteturaDDD\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }
