@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Api.CrossCutting.DependencyInjection;
 using Api.CrossCutting.Mapping;
 using Api.Data.Context;
@@ -11,11 +9,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
@@ -37,7 +34,7 @@ namespace application
         {
             // if (_environment.IsEnvironment("Testing"))
             // {
-            Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbapi;Uid=root;Pwd=mudar123");
+            // Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbapi;Uid=root;Pwd=mudar123");
             Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
             Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
             Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
@@ -166,7 +163,7 @@ namespace application
                 {
                     using (var context = service.ServiceProvider.GetService<MyContext>())
                     {
-                        //context.Database.Migrate();
+                        context.Database.Migrate();
                     }
                 }
             }
