@@ -29,6 +29,21 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -1683,6 +1698,21 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+      "sha512": "aymAjo2uHu67eKYlD1b7VLgx9ixbUnl7X9ykr3M3Di8upjMSAF8VbIeY+/mIf5BRjK4hhLfCiR5asR7+jV4a5Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.18.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -6049,6 +6079,7 @@
     ".NETCoreApp,Version=v3.1": [
       "CrossCutting >= 1.0.0",
       "Domain >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.18",
       "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.1.4"
     ]
@@ -6103,6 +6134,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.18, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.1.4, )"
